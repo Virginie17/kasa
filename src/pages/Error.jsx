@@ -1,6 +1,4 @@
 import React from "react";
-import Header from './../components/header';
-import Footer from './../components/footer';
 import Error from './../components/error';
 import Layout from './../components/layout';
 
@@ -8,11 +6,9 @@ import Layout from './../components/layout';
 const Errorpage = () => {
     return (
         <>
-            <Layout>
-                <Header />
+            <Layout> 
                 <Error />
             </Layout>
-            <Footer />
         </>
     );
 };
