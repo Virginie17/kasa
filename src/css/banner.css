@@ -38,26 +38,4 @@
     white-space: nowrap;
   }
   
-  @media screen and (max-width: 960px) {
-    .banner-text {
-      font-size: 24px;
-      line-height: 24px;
-      letter-spacing: 0em;
-      text-align: left;
-    }
   
-    .banner {
-      margin-top: 19px;
-    }
-  
-    .text-mobile-split {
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 320px) {
-    .banner-text {
-      font-size: 20px;
-      line-height: 20px;
-    }
-  }
