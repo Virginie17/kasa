@@ -1,6 +1,18 @@
-/* Footer.css */
+/* Réinitialisation CSS pour s'assurer qu'il n'y a pas de marge ou padding par défaut affectant le layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* CSS pour le footer */
 .footer {
+    width: 100vw; 
+    position: relative; 
+    left: 50%; 
+    right: 50%; 
+    margin-left: -50vw; 
+    margin-right: -50vw; 
     height: 209px;
     background-color: #000000;
     color: #FFF;
@@ -13,7 +25,6 @@
 .content {
     width: 513px;
     height: 46px;
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -21,14 +32,3 @@
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    .content {
-        font-size: 12px;
-        line-height: 17px;
-        width: 133px;
-    }
-
-    .mobile-text {
-        display: block;
-    }
-}

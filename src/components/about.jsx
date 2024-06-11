@@ -2,7 +2,7 @@ import React from 'react'
 import Collapse from './collapse'
 import './../css/about.css'; 
 
-
+//creation de la constante about qui utilise la constante collapse pour creer le titre et le contenu
 const About = () => {
   return (
     <div className="about-page">

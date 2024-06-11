@@ -1,8 +1,8 @@
-import bannerImage1 from './../images/banner1-small.png'; 
-import bannerImage2 from './../images/banner2-small.png'; 
+import bannerImage1 from './../images/banner1-small.png'; //banner page home
+import bannerImage2 from './../images/banner2-small.png';//banner page about 
 import "./../css/banner.css"
 
-
+//creation de la constante banner1 qui exporte l image et le texte de la banner de la page home
 export const Banner1 = () => {
     return (
       <div className="banner">
@@ -14,6 +14,7 @@ export const Banner1 = () => {
     );
   }
 
+//creation de la constante banner2 qui exporte l image de la banner de la page about
  export const Banner2 = () => {
     return (
       <div className="banner">

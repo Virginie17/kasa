@@ -6,7 +6,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
   }
   
   .logo img {
@@ -29,7 +34,6 @@
   .nav ul li a {
     width: 136px;
     height: 34px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
