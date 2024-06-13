@@ -8,6 +8,7 @@
     height: calc(100% - 4px);
     position: relative;
     overflow: hidden;
+    cursor: pointer;
   }
   
   .logements-card::before {

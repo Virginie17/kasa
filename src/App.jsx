@@ -13,19 +13,13 @@ import "./css/global.css"
 function App() {
     return (
         <BrowserRouter>
-        {/*utilisation du composant header dans toute les pages de l application*/}
             <Header />
             <Routes>
-                {/*utilisation du composant home pour afficher tous les elemets de la page home*/}
                 <Route path="/" element={<Home />} />
-                 {/*utilisation du composant housing pour afficher tous les elemets de la page housing*/}
                 <Route path="/logement/:id" element={<Housing />} />
-                 {/*utilisation du composant about pour afficher tous les elemets de la page about*/}
                 <Route path="/about" element={<About />} />
-                 {/*utilisation du composant error pour afficher tous les elemets de la page error*/}
                 <Route path="*" element={<Error />} />
             </Routes>
-             {/*utilisation du composant footer dans toute les pages de l application*/}
             <Footer />
         </BrowserRouter>
     );

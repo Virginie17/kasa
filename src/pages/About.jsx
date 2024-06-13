@@ -1,16 +1,14 @@
 import React from "react";
-import { Banner2 } from "../components/banner";
+import Banner from "../components/banner";
 import About from "../components/about";
-import "../css/about.css";
-
-
+import bannerImage2 from './../images/banner2-small.png';
 
 const Aboutpage = () => {
     return (
         <>
-                <Banner2 />
-                <About /> 
-                </>
+            <Banner image={bannerImage2} altText="Banner2" />
+            <About />
+        </>
     );
 };
 
