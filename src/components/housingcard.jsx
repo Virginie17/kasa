@@ -8,7 +8,7 @@ const HousingCard = ({ id, title, cover }) => {
 
   //fonction qui permet de declencher vers une  page detailler du logement en cliquant sur le logement
   const handleCardClick = () => {
-    navigate(`/logements/${id}`);
+    navigate(`/housing/${id}`);
   };
 
   return (

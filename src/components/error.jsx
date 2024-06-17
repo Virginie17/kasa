@@ -2,7 +2,7 @@ import './../css/error.css';
  import { Link } from 'react-router-dom';
 
  // Affiche une page d'erreur 404 et redirige vers la page d'accueil en cliquant sur le lien
-export default function Error() {
+const Error = () => {
 
   return (
     <div className="error-page">
@@ -12,3 +12,5 @@ export default function Error() {
     </div>
   );
 }
+
+export default Error;

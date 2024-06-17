@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from './pages/About';
 import Error from './pages/Error';
 import Home from './pages/Home';
@@ -16,8 +16,8 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/logement/:id" element={<Housing />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/housing/:id" element={<Housing />} />
                 <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
