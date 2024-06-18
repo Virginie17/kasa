@@ -1,5 +1,4 @@
-
-.logements-card {
+.housing-card {
     width: 100%;
     max-width: 340px;
     border-radius: 10px;
@@ -11,7 +10,7 @@
     cursor: pointer;
   }
   
-  .logements-card::before {
+  .housing-card::before {
     content: "";
     position: absolute;
     top: 0;

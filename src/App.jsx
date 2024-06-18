@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import Housing from './pages/Housing';
 import Header from './components/header';
 import Footer from './components/footer';
-import "./css/global.css"
+import './css/index.css'
+
 
 
 //configuration du routage de l application avec declaration de la fonction qui cree le composant APP

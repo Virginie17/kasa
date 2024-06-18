@@ -1,4 +1,4 @@
-.logement-tags {
+.housing-tags {
     height: 25px;
     border-radius: 8px;
     background-color: #FF6060;
@@ -13,12 +13,10 @@
     width: auto;
 }
 
-.logement-tags-list {
+.housing-tags-list {
     display: inline-flex;
     flex-direction: row;
     padding-bottom: 24px;
     flex-wrap: wrap;
     gap: 10px;
 }
-
-

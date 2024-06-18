@@ -1,4 +1,4 @@
-.logement-details {
+.housing-details {
     font-family: Montserrat;
 }
 
@@ -9,11 +9,11 @@ li {
     margin: 0;
 }
 
-.logement-host-and-rating {
+.housing-host-and-rating {
     padding-bottom: 20px;
 }
 
-.logement-title {
+.housing-title {
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
@@ -22,7 +22,7 @@ li {
     color: #FF6060;
 }
 
-.logement-location {
+.housing-location {
 
     font-size: 18px;
     font-weight: 500;
@@ -31,7 +31,7 @@ li {
     text-align: left;
 }
 
-.logement-tags {
+.housing-tags {
     height: 25px;
     border-radius: 8px;
     background-color: #FF6060;
@@ -47,27 +47,28 @@ li {
     color: #FFFFFF;
 }
 
-.logement-host {
+.housing-host {
     display: flex;
     gap: 10px;
     padding-bottom: 21px;
     padding-top: 24px;
     align-items: center;
+
 }
 
-.logement-rating {
+
+.housing-rating {
     display: flex;
     gap: 10px;
 }
 
-.logement-details {
+.housing-details {
     display: flex;
     justify-content: space-between;
 }
 
-.logement-collapses {
+.housing-collapses {
     display: flex;
     gap: 76px;
     padding-bottom: 50px;
 }
-

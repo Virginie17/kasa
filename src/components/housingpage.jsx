@@ -1,38 +1,40 @@
 import React, { useState, useEffect } from 'react';
-import Slideshow from './slideshow'; // Assuming you have a component for slideshow
-import logementsData from '../data/housing.json'; // Import your logements data
+import Slideshow from './slideshow'; 
+import HousingData from '../data/housing.json';
 import { useParams, useNavigate } from 'react-router-dom';
 import ErrorPage from './error';
+import Housingdetails from './housingdetails';
 
-const LogementsPage = () => {
-  const { id } = useParams(); // Get the id parameter from the URL
-  const navigate = useNavigate(); // Initialize navigate function
-  const [logement, setLogement] = useState(null);
+
+const HousingPage = () => {
+  const { id } = useParams(); 
+  const navigate = useNavigate(); 
+  const [Housing, setHousing] = useState(null);
+  
 
   useEffect(() => {
-    const selectedLogement = logementsData.find(logement => logement.id === id);
+    const selectedLogement = HousingData.find(logement => logement.id === id);
     if (!selectedLogement) {
-      // If logement data is not found, navigate to the custom 404 page
+     
       navigate('/404');
     } else {
-      setLogement(selectedLogement);
+      setHousing(selectedLogement);
     }
   }, [id, navigate]);
 
   
-  if (!logement) {
+  if (!Housing) {
     return <ErrorPage />;
   }
 
 
-  const { pictures } = logement;
+  const { pictures } = Housing;
 
   return (
     <div>
-      { <Slideshow images={pictures} />}
-      
-      
+       <Slideshow images={pictures} />
+      <Housingdetails housing={Housing} />
     </div>
   );
 };
-export default LogementsPage;
+export default HousingPage;

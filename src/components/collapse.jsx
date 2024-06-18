@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import './../css/collapse.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import de fontawesome
-import { faAngleUp,} from '@fortawesome/free-solid-svg-icons';//import de l icone angleup de fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
-//creation de collapse en utilisant les props title et content
-
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content, }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const renderContent = () => {
+    if (Array.isArray(content)) {
+      return <ul>{content.map((item, index) => <li key={index}>{item}</li>)}</ul>;
+    }
+    return <p>{content}</p>;
+  };
 
   return (
     <div className="collapse">
@@ -16,19 +21,7 @@ const Collapse = ({ title, content }) => {
           <FontAwesomeIcon icon={faAngleUp} />
         </div>
       </div>
-      {!isCollapsed && (
-        <div className="collapse-content">
-          {Array.isArray(content) ? (
-            <ul>
-              {content.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            <p>{content}</p>
-          )}
-        </div>
-      )}
+      {!isCollapsed && <div className="collapse-content">{renderContent()}</div>}
     </div>
   );
 };

@@ -6,7 +6,7 @@ import HousingData from './../data/housing.json'; // Import le fichier json des 
 // Creation du composant LogementsMenu qui contient le composant LogementsCard
 const housingMenu = () => {
   return (
-    <div className="logements-menu">
+    <div className="housing-menu">
       <div className="grid-container">
         {/* Parcours le tableau de logements et affiche le composant housingCard pour chaque logement avec les valeurs correspondantes */}
         {HousingData.map((housing) => (

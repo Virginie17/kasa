@@ -20,7 +20,7 @@ const Rating = ({ rating }) => {
     };
 
 
-    return <div className="logement-rating">{renderStars()}</div>;
+    return <div className="housing-rating">{renderStars()}</div>;
 };
 
 export default Rating;
