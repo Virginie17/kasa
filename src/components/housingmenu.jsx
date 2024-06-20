@@ -3,7 +3,7 @@ import './../css/housingmenu.css';
 import Housingcard from './housingcard'; // Import le composant housingcard
 import HousingData from './../data/housing.json'; // Import le fichier json des logements
 
-// Creation du composant LogementsMenu qui contient le composant LogementsCard
+// Creation du composant housingMenu qui contient le composant housingCard
 const housingMenu = () => {
   return (
     <div className="housing-menu">

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom'; //import de link(lien navbar et uselocation qui est un hook)
+import { Link, useLocation } from 'react-router-dom'; //importation des composants link et uselocation de react-router-dom
 import './../css/header.css';
 import logo from "./../images/logo-kasa.png";
 
-//creation du composant header qui contient les composants logo et nav et utilisation du hook uselocation pour obtenir l objet location
+//creation du composant header qui contient une barre de navigation dynamique ou le lien est actif et utilisation du hook uselocation pour obtenir l objet location
 const Header = () => {
-  const location = useLocation(); 
+  const location = useLocation();//utilisation du hook uselocation pour obtenir l url actuelle 
   return (
     <header className="header">
       <div className="logo">
@@ -14,7 +14,7 @@ const Header = () => {
       <nav className="nav">
         <ul>
           <li>
-            <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</Link>
+            <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</Link> 
           </li>
           <li>
             <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>A Propos</Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Collapse from './collapse'
+import Collapse from './collapse'//importation du composant collapse
 import './../css/about.css'; 
 
 //creation de la fonction about qui utilise  collapse pour creer le titre et le contenu

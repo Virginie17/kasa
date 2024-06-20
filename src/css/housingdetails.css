@@ -5,7 +5,7 @@
 ul,
 li {
     list-style: none;
-    padding: 0;
+    padding-top: 20px;
     margin: 0;
 }
 
@@ -57,9 +57,13 @@ li {
 }
 
 
-.housing-rating {
+
+.rating {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+    
 }
 
 .housing-details {

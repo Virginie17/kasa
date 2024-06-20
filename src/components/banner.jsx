@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types'; // Pour la validation des props
 import './../css/banner.css'; 
 
-// Définir le composant Banner
+// Définir le composant Banner avec 3 props (image, altText, text)
 const Banner = ({ image, altText, text }) => (
   <div className={`banner `}>
     <img src={image} alt={altText} className="banner-image" />
@@ -13,12 +13,12 @@ const Banner = ({ image, altText, text }) => (
 
 // Valider les types des props
 Banner.propTypes = {
-  image: PropTypes.string.isRequired,
-  altText: PropTypes.string.isRequired,
-  text: PropTypes.string,
+  image: PropTypes.string.isRequired,//image est requis
+  altText: PropTypes.string.isRequired,//altText est requis
+  text: PropTypes.string,//text est optionnel
 };
 
-// Définir les props par défaut
+// Définir une valeur par defaut pour text si elle n est pas fournie
 Banner.defaultProps = {
   text: '',
 };
