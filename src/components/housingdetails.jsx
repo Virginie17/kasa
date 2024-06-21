@@ -8,7 +8,7 @@ import propTypes from 'prop-types';
 
 //composant housingdetails qui recoit une prop housing qui contient les informations du logement
 const HousingDetails = ({ housing }) => {
-  const { title, description, host, rating, location, equipments, tags } = housing;
+  const { title, description, host, rating, location, equipements, tags } = housing;
 
   return (
     <div className="housing-details-container">
@@ -30,7 +30,7 @@ const HousingDetails = ({ housing }) => {
       </div>
       <div className="housing-collapses">
         <Collapse title="Description" content={description} />
-        <Collapse title="Equipments" content={equipments} />
+        <Collapse title="Equipements" content={equipements} />
       </div>
     </div>
   );
@@ -46,7 +46,7 @@ HousingDetails.propTypes = {
     }),
     rating: propTypes.number.isRequired,
     location: propTypes.string.isRequired,
-    equipments: propTypes.array.isRequired,
+    equipements: propTypes.array.isRequired,
     tags: propTypes.array.isRequired
   })
 }

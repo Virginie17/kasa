@@ -8,11 +8,8 @@
 /* CSS pour le footer */
 .footer {
     width: 100vw; 
-    position: relative; 
-    left: 50%; 
-    right: 50%; 
-    margin-left: -50vw; 
-    margin-right: -50vw; 
+    position: absolute; 
+    left: 0;  
     height: 209px;
     background-color: #000000;
     color: #FFF;
@@ -20,6 +17,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 40px;
+    
 }
 
 .content {
