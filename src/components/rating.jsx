@@ -1,6 +1,7 @@
 import React from 'react';
 import star_active from './../images/star_active.png';
 import star_inactive from './../images/star_inactive.png';
+import propTypes from 'prop-types';
 
 
 //composant rating qui recoit une prop rating qui indique le nombre d etoiles actives a afficher
@@ -17,5 +18,9 @@ const Rating = ({ rating }) => {
         return stars;
     };
     return <div className="rating">{renderStars()}</div>;
+};
+//validation des props
+Rating.propTypes = {
+    rating: propTypes.number.isRequired
 };
 export default Rating;

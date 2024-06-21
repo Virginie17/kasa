@@ -3,7 +3,8 @@ import "./../css/housingdetails.css"
 import Collapse from './collapse';
 import Rating from './rating';
 import Tags from './tags';
-import HostImage from './../images/Host.png';//image de l hote
+import  '../data/housing.json';
+import propTypes from 'prop-types';
 
 //composant housingdetails qui recoit une prop housing qui contient les informations du logement
 const HousingDetails = ({ housing }) => {
@@ -20,7 +21,7 @@ const HousingDetails = ({ housing }) => {
         <div className="housing-host-and-rating">
                     <div className="housing-host">
                         <p>{host.name}</p>
-                        <img src={HostImage} alt="Host" />
+                        <img src={host.picture} alt="Host"className='host-picture' />
                     </div>
                     <div className="housing-rating">
                         <Rating rating={rating} />
@@ -34,5 +35,20 @@ const HousingDetails = ({ housing }) => {
     </div>
   );
 };
+
+//validation des props
+HousingDetails.propTypes = {
+  housing: propTypes.shape({
+    title: propTypes.string.isRequired,
+    description: propTypes.string.isRequired,
+    host: propTypes.shape({
+      name: propTypes.string.isRequired
+    }),
+    rating: propTypes.number.isRequired,
+    location: propTypes.string.isRequired,
+    equipments: propTypes.array.isRequired,
+    tags: propTypes.array.isRequired
+  })
+}
 
 export default HousingDetails;

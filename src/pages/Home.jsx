@@ -3,7 +3,7 @@ import Banner from '../components/banner';
 import HousingMenu from '../components/housingmenu';
 import bannerImage1 from './../images/banner1-small.png';
 
-//creation du composant home qui contient le composant banner(banner page home) et le composant housingmenu(logements)
+//composant home qui contient le composant banner(banner page home) et le composant housingmenu(logements)
 const Home = () => {
     return (
         <>

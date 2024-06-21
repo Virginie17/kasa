@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './../css/slideshow.css';
 import arrowLeft from './../images/arrow_left.png';
 import arrowRight from './../images/arrow_right.png';
+import propTypes from 'prop-types';
 
 //composant Slideshow qui recoit une prop images qui est un tableau conteant les chemins vers les images a afficher
 const Slideshow = ({ images }) => {
@@ -36,7 +37,7 @@ const Slideshow = ({ images }) => {
             <div className="slide-container">
                 {images.length > 1 && (
                     <>
-                        <div onClick={prevSlide} className="prev">
+                        <div onClick={prevSlide} className="prev" >
                             <img src={arrowLeft} alt="fleche de gauche" />
                         </div>
                         <div onClick={nextSlide} className="next">
@@ -49,6 +50,10 @@ const Slideshow = ({ images }) => {
             </div>
         </div>
     );
+};
+//validation des props
+Slideshow.propTypes = {
+    images: propTypes.array.isRequired
 };
 
 export default Slideshow;

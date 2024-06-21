@@ -6,6 +6,7 @@ import ErrorPage from './error';
 import Housingdetails from './housingdetails';
 
 
+
 const HousingPage = () => {
   const { id } = useParams(); //recupere l'id du logement
   const navigate = useNavigate(); //permet de naviguer vers d'autres routes
@@ -37,4 +38,5 @@ const HousingPage = () => {
     </div>
   );
 };
+
 export default HousingPage;

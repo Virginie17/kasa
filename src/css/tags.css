@@ -20,3 +20,8 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+@media screen and (max-width: 800px) {
+    .housing-tags-list {
+        padding-bottom: 16px;
+    }
+}

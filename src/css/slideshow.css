@@ -32,7 +32,26 @@
   right: 10px;
   padding-left: 20px;
 }
+@media screen and (max-width: 600px) {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 
+  .prev {
+    left: 0;
+    padding: 0;
+    place-items: flex-start;
+    align-items: center;
+  }
+
+  .next {
+    right: 0;
+    padding: 0;
+    place-items: flex-end;
+    align-items: center;
+  }
+}
 
 .slide-counter {
   font-family: Montserrat;
@@ -50,3 +69,8 @@
   color: white;
 }
 
+@media (max-width: 960px) {
+  .slide-counter {
+      display: none;
+  }
+}

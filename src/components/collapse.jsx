@@ -2,11 +2,13 @@ import React, { useState } from 'react';//utilisation du hook usestate qui gere 
 import './../css/collapse.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';//importation de l icone provenant de fontawesome
+import propTypes from 'prop-types';
 
 //creation du composant collapse qui prend comme props title et content
 const Collapse = ({ title, content, }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);//etat de la section si true ou false
-
+  
+ 
   //fonction qui permet de changer l etat si c est un tableau (ul) ou paragraphe(p)
   const renderContent = () => {
     if (Array.isArray(content)) {
@@ -27,6 +29,11 @@ const Collapse = ({ title, content, }) => {
       {!isCollapsed && <div className="collapse-content">{renderContent()}</div>}
     </div>
   );
+};
+//validation des props
+Collapse.propTypes = {
+  title: propTypes.string.isRequired,
+  content: propTypes.oneOfType([propTypes.string, propTypes.array]),
 };
 
 export default Collapse;
