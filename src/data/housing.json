@@ -17,7 +17,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Paris 17e",
-		"equipments": [
+		"equipements": [
 			"Équipements de base",
 			"Micro-Ondes",
 			"Douche italienne",
@@ -48,7 +48,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Paris 10e",
-		"equipments": [
+		"equipements": [
 			"Parking",
 			"Sèche Cheveux",
 			"Machine à laver",
@@ -79,7 +79,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - Paris 20e",
-		"equipments": [
+		"equipements": [
 			"Wi-fi",
 			"Cuisine équipée",
 			"Télévision",
@@ -108,7 +108,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - Paris 11e",
-		"equipments": [
+		"equipements": [
 			"Micro-Ondes",
 			"Wi-fi",
 			"Chambre Séparée",
@@ -141,7 +141,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Paris 10e",
-		"equipments": [
+		"equipements": [
 			"Frigo Américain",
 			"Sèche Cheveux",
 			"Wi-fi",
@@ -171,7 +171,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Paris 18e",
-		"equipments": [
+		"equipements": [
 			"Chambre Séparée",
 			"Parking"
 		],
@@ -198,7 +198,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - Paris 18e",
-		"equipments": [
+		"equipements": [
 			"Salle de bains",
 			"Frigo",
 			"Wi-fi",
@@ -231,7 +231,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Paris 6e",
-		"equipments": [
+		"equipements": [
 			"Wi-fi",
 			"Sèche Cheveux",
 			"Machine à laver",
@@ -264,7 +264,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Paris 14e",
-		"equipments": [
+		"equipements": [
 			"Climatisation",
 			"Machine à laver",
 			"Sèche Cheveux",
@@ -294,7 +294,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - Paris 11e",
-		"equipments": [
+		"equipements": [
 			"Vue Parc",
 			"Chauffage",
 			"Sèche linge",
@@ -326,7 +326,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Paris 11e",
-		"equipments": [
+		"equipements": [
 			"Clic-clac",
 			"Four",
 			"Sèche Cheveux",
@@ -355,7 +355,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - Paris 3e",
-		"equipments": [
+		"equipements": [
 			"Rangements",
 			"Lit",
 			"Sèche Cheveux",
@@ -389,7 +389,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Ecouen",
-		"equipments": [
+		"equipements": [
 			"SDB",
 			"Cuisine équipée",
 			"Toilettes sèches",
@@ -420,7 +420,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Arnouville",
-		"equipments": [
+		"equipements": [
 			"SDB",
 			"Cuisine équipée",
 			"Frigo",
@@ -454,7 +454,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - Arnouville",
-		"equipments": [
+		"equipements": [
 			"Bouilloire",
 			"SDB",
 			"Cuisine équipée",
@@ -490,7 +490,7 @@
 		},
 		"rating": "3",
 		"location": "Ile de France - La Défense",
-		"equipments": [
+		"equipements": [
 			"Baie vitrée",
 			"Télévision",
 			"Four",
@@ -523,7 +523,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Levallois",
-		"equipments": [
+		"equipements": [
 			"Télévision",
 			"Four",
 			"Frigo",
@@ -550,7 +550,7 @@
 		},
 		"rating": "2",
 		"location": "Ile de France - Paris 20e",
-		"equipments": [
+		"equipements": [
 			"Bouilloire",
 			"Wi-fi",
 			"Micro-Ondes"
@@ -576,7 +576,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Paris 13e",
-		"equipments": [
+		"equipements": [
 			"Équipements de base",
 			"Four",
 			"Frigo",
@@ -603,7 +603,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Paris 13e",
-		"equipments": [
+		"equipements": [
 			"Wi-fi",
 			"Équipements de base",
 			"Micro-Ondes",
